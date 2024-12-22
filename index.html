@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визитка</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Добавляем фавикон -->
+</head>
+<body>
+    <div class="container">
+        <img src="avatar.png" alt="Ваше Фото" class="profile-photo">
+        <div class="description">
+            <h1>Динар Ямбаев</h1>
+            <p>QA engineer</p>
+            <section id="about" class="about-center">
+                <h2>Обо мне</h2>
+                <p>Я специализируюсь на тестировании программного обеспечения, обладая опытом как в ручном тестировании, так и в работе с разнообразными инструментами и технологиями. Моя экспертиза охватывает следующие области:</p>
+    
+    <ul>
+        <li><strong>Теоретическая база:</strong> Основы теории тестирования, клиент-серверная архитектура, HTTP-запросы и ответы, куки и авторизация.</li>
+        
+        <li><strong>Форматы данных и протоколы:</strong> REST, JSON, XML, SOAP, обзор сетевых протоколов.</li>
+        
+        <li><strong>Инструменты и подходы:</strong> DevTools, Postman (включая создание переменных, автотестов и пре-реквестов с помощью ИИ).</li>
+        
+        <li><strong>Архитектуры:</strong> Монолиты и микросервисы, основы API-тестирования.</li>
+        
+        <li><strong>Техники и методы тестирования:</strong> Тест-дизайн, виды тестирования, пирамида тестирования, чек-листы и тест-планы (создавались в Miro).</li>
+        
+        <li><strong>Документация и баг-трекинг:</strong> Опыт создания отчетов по тестированию, работа с системой управления тестированием Test IT, локализация багов, составление баг-репортов.</li>
+        
+        <li><strong>Базы данных:</strong> Основы SQL, включая основные операторы и виды JOIN-ов.</li>
+        
+        <li><strong>Методологии разработки:</strong> Agile, Scrum, Kanban (работал по Scrum).</li>
+        
+        <li><strong>Основы фронтенда:</strong> Создание визитки на HTML и CSS.</li>
+    </ul>
+    
+    <p>Моя цель – обеспечивать высокое качество программного обеспечения, применяя современные технологии и методики тестирования.</p>
+            </section>
+
+            <section id="contact">
+                <h2>Контактная информация</h2>
+                <p>Email: <a href="mailto:ваш.email@пример.com">dnr13@yandex.ru</a></p>
+                <p>Телефон: +7 (993) 055-23-26</p>
+                <p>Социальные сети:<a href="https://t.me/DinarYambaev" target="_blank"><i class="fab fa-telegram"></i></a> <a href="https://vk.com/id10105678" target="_blank"><i class="fab fa-vk"></i></a></p>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <div class="theme-switcher">
+            <button id="light-mode" class="active">Светлый режим</button>
+            <span>/</span>
+            <button id="dark-mode">Темный режим</button>
+        </div>
+    </footer>
+
+    <script>
+        const lightModeBtn = document.getElementById('light-mode');
+        const darkModeBtn = document.getElementById('dark-mode');
+
+        lightModeBtn.addEventListener('click', () => {
+            document.body.classList.remove('dark-mode');
+            document.body.classList.add('light-mode');
+            lightModeBtn.classList.add('active');
+            darkModeBtn.classList.remove('active');
+        });
+
+        darkModeBtn.addEventListener('click', () => {
+            document.body.classList.remove('light-mode');
+            document.body.classList.add('dark-mode');
+            darkModeBtn.classList.add('active');
+            lightModeBtn.classList.remove('active');
+        });
+    </script>
+</body>
+</html>

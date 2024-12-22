@@ -1,0 +1,61 @@
+body {
+   font-family: 'Arial', sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #fff; /* Белый фон по умолчанию */
+   color: #000; /* Черный текст по умолчанию */
+   display: flex;
+   flex-direction: column;
+   align-items: center; /* Центровка по горизонтали */
+   text-align: center; /* Центровка текста */
+}
+
+.light-mode {
+   background-color: #fff; /* Светлый фон */
+   color: #000; /* Темный текст */
+}
+
+.dark-mode {
+   background-color: #333; /* Темный фон */
+   color: #fff; /* Светлый текст */
+}
+
+.theme-switcher {
+   margin: 20px;
+   display: flex;
+   align-items: center; /* Центровка по вертикали */
+   justify-content: center; /* Центровка по горизонтали */
+}
+
+button {
+   padding: 10px 15px;
+   border: none;
+   cursor: pointer;
+   margin: 0 5px;
+}
+
+button.active {
+   color: #fff;
+}
+
+button#light-mode {
+   background-color: #000; /* Черная кнопка для светлого режима */
+}
+
+button#dark-mode {
+   background-color: #fff; /* Белая кнопка для темного режима */
+   color: #000;
+}
+
+.container {
+   display: flex;
+   flex-direction: column; /* Вертикальная ориентация */
+   align-items: center; /* Центровка содержимого */
+   margin: 20px;
+}
+
+.profile-photo {
+   width: 200px; /* Размер фото */
+   height: 200px; /* Высота фото */
+   border-radius: 50%; /* Круглая форма */
+   box-shadow
